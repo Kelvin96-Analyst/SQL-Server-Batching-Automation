@@ -1,2 +1,42 @@
-# SQL-Server-Batching-Automation
-Automated production batching system using SQL Server stored procedures, triggers, and scheduling tools.
+# SQL Server Batch Automation System
+
+This project demonstrates how to automate production batching using Microsoft SQL Server. It simulates a real-world scenario where batch records are updated automatically based on events or schedules.
+
+## Features
+
+- Centralized batch tracking using SQL Server
+- Stored Procedures for status updates
+- Triggers to react to data changes
+- SQL Server Agent jobs to schedule updates
+- Extendable via PowerShell or Python scripts
+
+## Table Structure
+
+```sql
+CREATE TABLE [dbo].[BatchTable] (
+    [BatchNumber] INT PRIMARY KEY,
+    [StartDate] DATETIME,
+    [EndDate] DATETIME,
+    [Quantity] INT,
+    [Status] VARCHAR(50)
+);
+```
+
+## Automation Workflow
+
+1. Data collection from production sources
+2. Batch creation and status updates via stored procedures
+3. Triggers for real-time data-driven responses
+4. Scheduled jobs for routine updates
+5. Optional integration with external systems via scripts
+
+## Tools Used
+
+- Microsoft SQL Server
+- SQL Server Agent
+- T-SQL
+- Optional: PowerShell or Python for extensions
+
+## Author
+
+Kelvin Ayogu
