@@ -11,10 +11,8 @@ This project demonstrates how to automate production batching using Microsoft SQ
 - Extendable via PowerShell or Python scripts
   
 ## Key Components of the Automation System
-1.Data Integration
-Collected production data from multiple sources—including sensors, machines, and manual inputs—into a centralized SQL Server database. Key data points include batch numbers, schedules, quantities, and process statuses.
-
-## Table Structure
+1. Data Integration Collected production data from multiple sources—including sensors, machines, and manual inputs into a centralized SQL Server database. Key data points include batch numbers, schedules, quantities, and process statuses.
+2. Batch Table Structure
 
 ```sql
 CREATE TABLE [dbo].[BatchTable] (
