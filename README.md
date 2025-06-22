@@ -77,10 +77,22 @@ END
    Utilized PowerShell in conjunction with SAP GUI Scripting to automate routine operations such as sending notifications, generating
    transactional reports, and updating material consumption data used for production batching directly in SAP, ensuring real-time data
    accuracy and reducing manual input.
+```pgsql
+$SapGuiAuto = [COMObject]::Create("SapGui.ScriptingCtrl.1")
+$application = $SapGuiAuto.OpenConnection("SAP_SERVER_ID", $true)
+$connection = $application.Children(0)
+$session = $connection.Children(0)
+$session.findById("wnd[0]/usr/ctxtRM07M-MATNR").text = "BATCHMAT001"           # Material code
+$session.findById("wnd[0]/usr/ctxtRM07M-WERKS").text = "PLANT01"              # Plant
+$session.findById("wnd[0]/usr/ctxtRM07M-LGORT").text = "WH01"                 # Storage location
+$session.findById("wnd[0]/usr/ctxtRM07M-BWART").text = "261"                  # Movement type: Goods issue for order
+$session.findById("wnd[0]/usr/ctxtRM07M-AUFNR").text = "PRODORD1234"          # Production order
+$session.findById("wnd[0]/usr/txtRM07M-MENGE").text = "500"                   # Quantity
+$session.findById("wnd[0]/usr/ctxtRM07M-MEINS").text = "KG"                   # Unit
 
+```
 
-
-## Automation Workflow
+### Automation Workflow
 
 1. Data collection from production sources
 2. Batch creation and status updates via stored procedures
@@ -88,13 +100,16 @@ END
 4. Scheduled jobs for routine updates
 5. Optional integration with external systems via scripts
 
-## Tools Used
+### Tools & Technologies Used:
 
-- Microsoft SQL Server
-- SQL Server Agent
-- T-SQL
-- Optional: PowerShell or Python for extensions
+- Microsoft SQL Server – Task automation
+- SQL Server Agent – For job scheduling and task automation
+- Stored Procedures & Triggers – To manage logic and ensure data integrity
+- SQL Server Integration Services (SSIS) – For scalable data movement and workflow automation
+- PowerShell – For system integration and external task execution
 
-## Author
+#### This solution demonstrates my ability to build scalable, automated systems using SQL Server that support real-time data processing and operational efficiency in a production environment.
+
+### Author
 
 Kelvin Ayogu
