@@ -8,7 +8,7 @@ This project demonstrates how to automate production batching using Microsoft SQ
 - Stored Procedures for status updates
 - Triggers to react to data changes
 - SQL Server Agent jobs to schedule updates
-- Extendable via PowerShell or Python scripts
+- Extendable via PowerShell scripts
   
 ## Key Components of the Automation System
 #### 1. Data Integration
