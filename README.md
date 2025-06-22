@@ -4,7 +4,7 @@ This project demonstrates how to automate production batching using Microsoft SQ
 
 ## Features
 
-- Centralized batch tracking using SQL Server
+- Centralized Production batch tracking using SQL Server
 - Stored Procedures for status updates
 - Triggers to react to data changes
 - SQL Server Agent jobs to schedule updates
