@@ -111,5 +111,23 @@ $session.findById("wnd[0]/usr/ctxtRM07M-MEINS").text = "KG"                   # 
 #### This solution demonstrates my ability to build scalable, automated systems using SQL Server that support real-time data processing and operational efficiency in a production environment.
 
 ### Author
+### Kelvin Ayogu
 
-Kelvin Ayogu
+
+
+### ⚠️ Disclaimer & Data Privacy Notice
+#### Disclaimer:
+This project is a personal, educational example created to demonstrate SQL Server automation techniques in a generic production environment. It is not affiliated with, endorsed by, or representative of any organization, including my current or past employers.
+
+#### Data Privacy:
+
+1. No real company data, infrastructure details, or proprietary information is included.
+
+2. All scripts are purely illustrative and designed to be generic and non-specific to any organization.
+
+3. These materials must not be copied, reused, or implemented in any live production environment without proper review and     authorization.
+
+#### Usage Restriction:
+These files are provided for learning purposes only. Redistribution or commercial use without permission is strictly prohibited. Use of this code is at your own risk.
+
+
