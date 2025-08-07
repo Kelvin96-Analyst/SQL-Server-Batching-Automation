@@ -2,7 +2,7 @@
 
 This project demonstrates how to automate production batching using Microsoft SQL Server. It simulates a real-world scenario where batch records are updated automatically based on events or schedules, streamlining operations and reducing manual intervention. This system leverages core SQL Server tools and features to dynamically manage and update batch data, improving efficiency and accuracy in a manufacturing environment.
 
-![Power BI Dashboard]batching_automation.png).
+![Power BI Dashboard](batching_automation.png).
 
 ## Features
 
